@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/static/css/style.css">
+    <title>Evaluation Metric</title>
+</head>
+
+<body>
+    <h1 class="heading">Evaluation Metric demo</h1>
+    <div class="container-input">
+        <div id = 'left'>
+            <form class="search-form w-100" action="{{ url_for('gotorank')}}" method="post">
+                <button type="submit" id="rank-button" class="btn-enter" value="Search">
+                    Rank Based Metric
+                </button>
+            </form>
+        </div>
+        <div id = 'right'>
+            <form class="search-form w-100" action="{{ url_for('gotoscore')}}" method="post">
+                <button type="submit" id="score-button" class="btn-enter" value="Search">
+                    Score Based Metric
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/static/css/style.css">
+    <title>Evaluation Metric</title>
+</head>
+<body>
+    <h1 class="heading">Score based Evaluation</h1>
+    <div class="container-input">
+        <form class="search-form w-100" action="{{ url_for('predictscore')}}" method="post">
+            <div class="instructions">*Please enter reference text</div>
+            <input type="text" placeholder="Enter the reference text..." name="reference" class="form-control search-input"
+                id='reference'>
+            
+            <div class="instructions">*Please enter candidate text</div>
+            <input type="text" placeholder="Enter the candidate text..." name="candidate" class="form-control search-input"
+                id='candidate'>
+            <br>
+            <div class="instructions">*Please select model</div>
+            <select name="model" id="model_list">
+                <option value="m1">MLP</option>
+                <option value="m2">Model 2</option>
+                <option value="m3">Model 3</option>
+                <option value="m4">Model 4</option>
+                <option value="m5">Model 5</option>
+            </select>
+            <br>
+            <button type="submit" id = "submit-button" class="btn-enter" value="Search">
+                Enter
+            </button>
+        </form>
+    </div>
+    <div id="prediction">Score is {{prediction}}</div>
+
+</body>
+</html>

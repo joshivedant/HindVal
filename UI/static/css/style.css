@@ -1,0 +1,97 @@
+.heading{
+    text-align: center;
+}
+
+.container-input{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 220px;
+}
+
+.instructions{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.results{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.metrics{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btn-enter {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-enter:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-color: black;
+}
+
+#prediction{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: blue;
+    font-size: 20px;
+}
+
+#reference{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 25px;
+    width: 750px;
+}
+
+#candidate{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 25px;
+    width: 750px;
+}
+
+#model_list{
+    width: 200px;
+    height: 30px;
+    /* align-items: center; */
+    text-align-last: center;
+    text-align: center;
+}
+
+#left{
+    float: left;
+    border: #4CAF50;
+    height: 200px;
+    width: 50%;
+}
+
+#right{
+    float: right;
+    border: #4CAF50;
+    height: 200px;
+    width: 50%;
+}
+
+#score-button{
+    align-items: center;
+    
+}
+
+#rank-button{
+    align-items: center;
+}
