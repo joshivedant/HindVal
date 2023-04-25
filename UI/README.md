@@ -10,3 +10,4 @@ UI will open on the `http://{ip-address}:4000/`
 Please enter reference or candidate sentences to check the similarity between the sentences.
 
 ## Note: You might have to install dependencies
+metrics.yml contains dependencies
